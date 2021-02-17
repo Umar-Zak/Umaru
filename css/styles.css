@@ -256,6 +256,10 @@ a {
   color: white;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 @media screen and (min-width: 1024px) {
   .btn--outline {
     font-size: 1.5rem;
@@ -525,5 +529,42 @@ a {
 @media screen and (min-width: 1024px) {
   .testimonial {
     padding: 3rem;
+  }
+}
+
+/* Callout */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+}
+
+.callout__title {
+  margin-top: 0;
+  color: white;
+  font-size: 3rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
   }
 }
