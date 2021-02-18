@@ -601,3 +601,43 @@ a {
 .collapsible--expanded .collapsible__icon {
   transform: rotate(0);
 }
+
+/* Blocks */
+
+.block {
+  --block-padding-vertical: 6rem;
+  padding: var(--block-padding-vertical) 4rem;
+}
+
+.block__heading {
+  text-align: center;
+}
+
+.block__header {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #75858b;
+}
+
+.block--dark .block__header {
+  color: #fff;
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--block-padding-vertical) + 4rem);
+}
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding-bottom: calc(var(--block-padding-vertical) + 4rem);
+}
+
+/* container */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
