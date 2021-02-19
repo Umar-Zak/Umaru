@@ -238,6 +238,11 @@ a {
   color: white;
 }
 
+.btn--header {
+  background: var(--color--headings);
+  color: white;
+}
+
 .btn--accent:hover {
   background: #ec3000;
 }
@@ -330,6 +335,10 @@ a {
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
+}
+
+.card--primary .badge--primary {
+  background: #126de4;
 }
 
 /* plan */
@@ -780,5 +789,33 @@ a {
 
   .domain-block__list-item {
     margin-bottom: 0;
+  }
+}
+
+/* Plans Block */
+
+.plan-block .plan {
+  transition: transform 0.3s;
+  max-width: 500px;
+  margin: 0 auto 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+  .plan-block__popular {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+  }
+
+  .plan-block__popular:hover {
+    transform: scale(1.2);
+  }
+
+  .plan-block .plan:hover {
+    transform: scale(1.05);
   }
 }
