@@ -897,3 +897,9 @@ a {
 .control-block .media__title {
   color: white;
 }
+
+/* Testimonial block */
+
+.testimonial-block .block__heading {
+  margin-bottom: 3rem;
+}
