@@ -46,6 +46,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -179,6 +180,10 @@ a {
 
 .icon--primary {
   fill: var(--color-primary);
+}
+
+.icon--header {
+  fill: var(--color--headings);
 }
 
 .icon--white {
@@ -639,11 +644,11 @@ a {
 }
 
 .block--skewed-right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
-  padding-bottom: calc(var(--block-padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  padding-bottom: calc(var(--block-padding-vertical) + 10rem);
 }
 .block--skewed-left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding-bottom: calc(var(--block-padding-vertical) + 4rem);
 }
 
@@ -864,4 +869,31 @@ a {
   .feature__tagline {
     font-size: 1.5rem;
   }
+}
+
+/* Control block */
+
+.control-block__image {
+  width: 100%;
+}
+
+/* Control Block */
+
+.control-block {
+  padding-bottom: 12rem;
+}
+.control-block .media {
+  margin-bottom: 1rem;
+}
+
+.control-block .grid {
+  gap: 3rem;
+}
+
+.control-block .block__header {
+  margin-bottom: 5rem;
+}
+
+.control-block .media__title {
+  color: white;
 }
