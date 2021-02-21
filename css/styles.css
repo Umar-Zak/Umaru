@@ -395,6 +395,12 @@ a {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 400px) {
+  .plan .list {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
